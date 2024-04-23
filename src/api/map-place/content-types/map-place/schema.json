@@ -12,9 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "type": {
-      "type": "string"
-    },
     "nom": {
       "type": "string"
     },
@@ -22,10 +19,18 @@
       "type": "json",
       "required": true
     },
-    "couleur": {
-      "type": "string"
-    },
     "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "logo": {
       "allowedTypes": [
         "images",
         "files",
@@ -33,7 +38,7 @@
         "audios"
       ],
       "type": "media",
-      "multiple": true
+      "multiple": false
     }
   }
 }
